@@ -1,0 +1,1291 @@
+﻿html{box-sizing:border-box;font-size:62.5%;scroll-behavior:smooth}*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:#061216;color:#f3f6f3;font-family:Montserrat,Arial,sans-serif;font-size:1.6rem;line-height:1.5}
+main{display:block}.rte p{margin:0}.shopify-section{display:block}
+/* =========================================================
+   SECTION
+========================================================= */
+
+#custom-project-cta-intake {
+  position: relative;
+  isolation: isolate;
+
+  width: 100%;
+
+  min-height:
+    var(--cpc-min-height);
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: center;
+
+  padding-top:
+    var(--cpc-padding-top);
+
+  padding-bottom:
+    var(--cpc-padding-bottom);
+
+  color:
+    var(--cpc-text);
+
+  font-family:
+    'Montserrat',
+    Arial,
+    sans-serif;
+
+  background:
+    radial-gradient(
+      circle at 17% 48%,
+      color-mix(
+        in srgb,
+        var(--cpc-accent) 5%,
+        transparent
+      ) 0%,
+      transparent 42%
+    ),
+    linear-gradient(
+      100deg,
+      var(--cpc-bg-secondary) 0%,
+      var(--cpc-bg) 48%,
+      var(--cpc-bg) 100%
+    );
+}
+
+
+#custom-project-cta-intake *,
+#custom-project-cta-intake *::before,
+#custom-project-cta-intake *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BACKGROUND IMAGE
+========================================================= */
+
+#custom-project-cta-intake
+.custom-project-cta__background-image-wrap {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 0;
+
+  overflow: hidden;
+
+  pointer-events: none;
+}
+
+
+#custom-project-cta-intake
+.custom-project-cta__background-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  opacity:
+    0.2;
+}
+
+
+/* =========================================================
+   AMBIENT
+========================================================= */
+
+#custom-project-cta-intake
+.custom-project-cta__ambient {
+  position: absolute;
+
+  z-index: 1;
+
+  width: 700px;
+  height: 500px;
+
+  left: -280px;
+  top: 50%;
+
+  transform:
+    translateY(-50%);
+
+  border-radius:
+    50%;
+
+  background:
+    radial-gradient(
+      circle,
+      color-mix(
+        in srgb,
+        var(--cpc-accent) 8%,
+        transparent
+      ) 0%,
+      transparent 70%
+    );
+
+  filter:
+    blur(50px);
+
+  pointer-events:
+    none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+#custom-project-cta-intake
+.custom-project-cta__container {
+  position: relative;
+
+  z-index: 3;
+
+  width:
+    min(
+      var(--cpc-max-width),
+      calc(100% - 48px)
+    );
+
+  margin:
+    0 auto;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+#custom-project-cta-intake
+.custom-project-cta__content {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+#custom-project-cta-intake
+.custom-project-cta__eyebrow {
+  margin:
+    0
+    0
+    22px;
+
+  color:
+    var(--cpc-accent);
+
+  font-size:14px;
+
+  line-height:
+    1.2;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.16em;
+
+  text-transform:
+    uppercase;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+#custom-project-cta-intake
+.custom-project-cta__heading {
+  width: 100%;
+
+  max-width:
+    var(--cpc-heading-max);
+
+  margin:
+    0 auto;
+
+  color:
+    var(--cpc-text);
+
+  font-size:
+    clamp(
+      46px,
+      5vw,
+      72px
+    );
+
+  line-height:
+    0.98;
+
+  letter-spacing:
+    -0.055em;
+
+  font-weight:
+    800;
+
+  text-align:
+    center;
+}
+
+
+#custom-project-cta-intake
+.custom-project-cta__heading--mobile {
+  display: none;
+}
+
+
+#custom-project-cta-intake
+.custom-project-cta__mobile-line {
+  display: block;
+}
+
+
+#custom-project-cta-intake
+.custom-project-cta__heading-line {
+  display:
+    block;
+}
+
+
+#custom-project-cta-intake
+.custom-project-cta__heading-line--second {
+  display: flex;
+
+  align-items:
+    baseline;
+
+  justify-content:
+    center;
+
+  gap:
+    13px;
+
+  margin-top:
+    6px;
+}
+
+
+#custom-project-cta-intake
+.custom-project-cta__heading-prefix {
+  color:
+    var(--cpc-text);
+
+  font-family:
+    'Montserrat',
+    Arial,
+    sans-serif;
+
+  font-style:
+    normal;
+
+  font-weight:
+    800;
+}
+
+
+#custom-project-cta-intake
+.custom-project-cta__highlight {
+  color:
+    var(--cpc-accent);
+
+  font-family:
+    Georgia,
+    'Times New Roman',
+    serif;
+
+  font-size:
+    1.06em;
+
+  font-style:
+    italic;
+
+  font-weight:
+    500;
+
+  letter-spacing:
+    -0.045em;
+
+  white-space:
+    nowrap;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+#custom-project-cta-intake
+.custom-project-cta__description {
+  width: 100%;
+
+  max-width:
+    var(--cpc-description-max);
+
+  margin:
+    29px auto 0;
+
+  color:
+    var(--cpc-muted);
+
+  font-size:
+    var(--cpc-description-size);
+
+  line-height:
+    1.55;
+
+  font-weight:
+    400;
+
+  text-align:
+    center;
+}
+
+
+#custom-project-cta-intake
+.custom-project-cta__description p {
+  margin: 0;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+#custom-project-cta-intake
+.custom-project-cta__actions {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap:
+    10px;
+
+  margin-top:
+    30px;
+}
+
+
+/* =========================================================
+   BUTTON BASE
+========================================================= */
+
+#custom-project-cta-intake
+.custom-project-cta__button {
+  min-height:
+    48px;
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    8px;
+
+  padding:
+    13px
+    24px;
+
+  border-radius:
+    5px;
+
+  text-decoration:
+    none;
+
+  text-align:
+    center;
+
+  font-size:
+    var(--cpc-button-size);
+
+  line-height:
+    1;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.025em;
+
+  text-transform:
+    uppercase;
+
+  white-space:
+    nowrap;
+
+  transition:
+    transform
+    0.2s
+    ease,
+
+    background-color
+    0.2s
+    ease,
+
+    border-color
+    0.2s
+    ease,
+
+    color
+    0.2s
+    ease,
+
+    box-shadow
+    0.2s
+    ease;
+}
+
+
+#custom-project-cta-intake
+.custom-project-cta__button:hover {
+  transform:
+    translateY(-2px);
+}
+
+
+/* =========================================================
+   PRIMARY
+========================================================= */
+
+#custom-project-cta-intake
+.custom-project-cta__button--primary {
+  min-width:
+    160px;
+
+  border:
+    1px solid
+    var(--cpc-button-bg);
+
+  background:
+    var(--cpc-button-bg);
+
+  color:
+    var(--cpc-button-text);
+
+  box-shadow:
+    0
+    10px
+    24px
+    color-mix(
+      in srgb,
+      var(--cpc-button-bg) 12%,
+      transparent
+    );
+}
+
+
+#custom-project-cta-intake
+.custom-project-cta__button--primary:hover {
+  background:
+    color-mix(
+      in srgb,
+      var(--cpc-button-bg) 90%,
+      #ffffff
+    );
+
+  border-color:
+    color-mix(
+      in srgb,
+      var(--cpc-button-bg) 90%,
+      #ffffff
+    );
+
+  box-shadow:
+    0
+    14px
+    30px
+    color-mix(
+      in srgb,
+      var(--cpc-button-bg) 20%,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   SECONDARY
+========================================================= */
+
+#custom-project-cta-intake
+.custom-project-cta__button--secondary {
+  min-width:
+    128px;
+
+  border:
+    1px solid
+    var(--cpc-border);
+
+  background:
+    transparent;
+
+  color:
+    var(--cpc-text);
+}
+
+
+#custom-project-cta-intake
+.custom-project-cta__button--secondary:hover {
+  border-color:
+    var(--cpc-accent);
+
+  background:
+    color-mix(
+      in srgb,
+      var(--cpc-accent) 5%,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   NOTE
+========================================================= */
+
+#custom-project-cta-intake
+.custom-project-cta__note {
+  margin-top:
+    13px;
+
+  color:
+    color-mix(
+      in srgb,
+      var(--cpc-muted) 67%,
+      transparent
+    );
+
+  font-size:
+    var(--cpc-note-size);
+
+  line-height:
+    1.4;
+
+  font-weight:
+    400;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 989px) {
+
+  #custom-project-cta-intake {
+    min-height:
+      auto;
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__container {
+    width:
+      calc(100% - 36px);
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__heading {
+    max-width:
+      820px;
+
+    font-size:
+      clamp(
+        42px,
+        6vw,
+        62px
+      );
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__description {
+    max-width:
+      650px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 700px) {
+
+  #custom-project-cta-intake {
+    padding-top:
+      var(--cpc-mobile-padding-top);
+
+    padding-bottom:
+      var(--cpc-mobile-padding-bottom);
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__container {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__eyebrow {
+    margin-bottom:
+      18px;
+
+    font-size:
+      var(--cpc-mobile-eyebrow-size);
+
+    letter-spacing:
+      0.13em;
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__heading:not(.custom-project-cta__heading--mobile) {
+    display: none;
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__heading--mobile {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size:
+      clamp(
+        34px,
+        10vw,
+        var(--cpc-mobile-heading-size)
+      );
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+    text-align: center;
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__mobile-line--main {
+    color: var(--cpc-text);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__mobile-line--highlight {
+    color: var(--cpc-accent);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.08em;
+    line-height: 0.96;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: -0.045em;
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__mobile-line--main
+  + .custom-project-cta__mobile-line--highlight {
+    margin-top: 8px;
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__heading-line--second {
+    flex-wrap:
+      wrap;
+
+    gap:
+      8px;
+
+    margin-top:
+      5px;
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__highlight {
+    white-space:
+      normal;
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__description {
+    max-width:
+      520px;
+
+    margin-top:
+      24px;
+
+    font-size:
+      var(--cpc-mobile-description-size);
+
+    line-height:
+      1.6;
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__actions {
+    width:
+      100%;
+
+    max-width:
+      420px;
+
+    flex-direction:
+      column;
+
+    align-items:
+      stretch;
+
+    gap:
+      10px;
+
+    margin-top:
+      27px;
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__button,
+  #custom-project-cta-intake
+  .custom-project-cta__button--primary,
+  #custom-project-cta-intake
+  .custom-project-cta__button--secondary {
+    width:
+      100%;
+
+    min-width:
+      0;
+
+    min-height:
+      52px;
+
+    font-size:
+      var(--cpc-mobile-button-size);
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__note {
+    margin-top:
+      14px;
+
+    font-size:
+      var(--cpc-mobile-note-size);
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 420px) {
+
+  #custom-project-cta-intake
+  .custom-project-cta__heading--mobile {
+    font-size:
+      clamp(
+        32px,
+        9.8vw,
+        var(--cpc-mobile-heading-size)
+      );
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__heading-line--second {
+    display:
+      block;
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__heading-prefix {
+    display:
+      inline;
+  }
+
+
+  #custom-project-cta-intake
+  .custom-project-cta__highlight {
+    display:
+      inline;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  #custom-project-cta-intake
+  .custom-project-cta__button {
+    transition:
+      none;
+  }
+
+}
+#CustomAppForm-intake {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: var(--caf-padding-top);
+    padding-bottom: var(--caf-padding-bottom);
+    background: var(--caf-bg);
+    color: var(--caf-text);
+    font-family: 'Montserrat', Arial, sans-serif;
+  }
+
+  #CustomAppForm-intake *,
+  #CustomAppForm-intake *::before,
+  #CustomAppForm-intake *::after {
+    box-sizing: border-box;
+  }
+
+  #CustomAppForm-intake .custom-app-form-section__container {
+    width: min(
+      var(--caf-max-width),
+      calc(100% - 48px)
+    );
+    margin: 0 auto;
+  }
+
+  #CustomAppForm-intake .custom-app-form-section__panel {
+    width: 100%;
+    padding: var(--caf-panel-padding);
+    border: 1px solid var(--caf-border);
+    border-radius: var(--caf-radius);
+    background: var(--caf-panel-bg);
+  }
+
+  /* Header */
+
+  #CustomAppForm-intake .custom-app-form-section__top-header {
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto 42px;
+    padding: 0 0 28px;
+    border-bottom: 1px solid var(--caf-border);
+    text-align: center;
+  }
+
+  #CustomAppForm-intake .custom-app-form-section__top-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin: 0 0 13px;
+    color: var(--caf-accent);
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  #CustomAppForm-intake .custom-app-form-section__top-eyebrow-dot {
+    width: 5px;
+    height: 5px;
+    flex: 0 0 5px;
+    border-radius: 50%;
+    background: var(--caf-accent);
+    box-shadow:
+      0 0 12px
+      color-mix(in srgb, var(--caf-accent) 65%, transparent);
+  }
+
+  #CustomAppForm-intake .custom-app-form-section__top-title {
+    margin: 0;
+    color: var(--caf-text);
+    font-size: clamp(24px, 2.4vw, 34px);
+    line-height: 1.12;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+  }
+
+  #CustomAppForm-intake .custom-app-form-section__top-text {
+    max-width: 680px;
+    margin: 12px auto 0;
+    color: var(--caf-muted);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  #CustomAppForm-intake .custom-app-form-section__top-text p {
+    margin: 0;
+  }
+
+  /* Form */
+
+  #CustomAppForm-intake .custom-app-form {
+    width: 100%;
+    display: grid;
+    gap: 21px;
+  }
+
+  #CustomAppForm-intake .custom-app-form__section {
+    min-width: 0;
+    display: grid;
+    gap: 15px;
+    margin: 0;
+    padding: 8px 0 0;
+    border: 0;
+  }
+
+  #CustomAppForm-intake .custom-app-form__section + .custom-app-form__section {
+    padding-top: 25px;
+    border-top: 1px solid var(--caf-border);
+  }
+
+  /* +1px from previous form version */
+  #CustomAppForm-intake .custom-app-form__section-title {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--caf-accent);
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  #CustomAppForm-intake .custom-app-form__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  #CustomAppForm-intake .custom-app-form__field {
+    min-width: 0;
+    display: grid;
+    gap: 8px;
+  }
+
+  #CustomAppForm-intake .custom-app-form__field--full {
+    grid-column: 1 / -1;
+  }
+
+  #CustomAppForm-intake .custom-app-form__field label,
+  #CustomAppForm-intake .custom-app-form__field-label {
+    color: color-mix(in srgb, var(--caf-text) 86%, var(--caf-muted));
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+
+  #CustomAppForm-intake input:not([type="checkbox"]),
+  #CustomAppForm-intake textarea,
+  #CustomAppForm-intake select {
+    width: 100%;
+    margin: 0;
+    border: 1px solid var(--caf-border);
+    border-radius: 8px;
+    outline: none;
+    background: var(--caf-input-bg);
+    color: var(--caf-text);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+    box-shadow: none;
+    transition:
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  #CustomAppForm-intake input:not([type="checkbox"]),
+  #CustomAppForm-intake select {
+    min-height: 50px;
+    padding: 12px 14px;
+  }
+
+  #CustomAppForm-intake textarea {
+    min-height: 110px;
+    padding: 14px;
+    resize: vertical;
+  }
+
+  #CustomAppForm-intake input::placeholder,
+  #CustomAppForm-intake textarea::placeholder {
+    color: var(--caf-muted-2);
+    opacity: 1;
+  }
+
+  #CustomAppForm-intake input:not([type="checkbox"]):focus,
+  #CustomAppForm-intake textarea:focus,
+  #CustomAppForm-intake select:focus {
+    border-color:
+      color-mix(in srgb, var(--caf-accent) 72%, transparent);
+    box-shadow:
+      0 0 0 3px
+      color-mix(in srgb, var(--caf-accent) 9%, transparent);
+  }
+
+  #CustomAppForm-intake input:not([type="checkbox"]):focus-visible,
+  #CustomAppForm-intake textarea:focus-visible,
+  #CustomAppForm-intake select:focus-visible,
+  #CustomAppForm-intake .custom-app-form__submit:focus-visible {
+    outline: 2px solid var(--caf-accent);
+    outline-offset: 2px;
+  }
+
+  #CustomAppForm-intake select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 40px;
+    background-image:
+      linear-gradient(45deg, transparent 50%, var(--caf-muted) 50%),
+      linear-gradient(135deg, var(--caf-muted) 50%, transparent 50%);
+    background-position:
+      calc(100% - 18px) calc(50% - 2px),
+      calc(100% - 13px) calc(50% - 2px);
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+  }
+
+  #CustomAppForm-intake .custom-app-form__checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  #CustomAppForm-intake .custom-app-form__check-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    padding: 11px 12px;
+    border: 1px solid var(--caf-border);
+    border-radius: 8px;
+    background: var(--caf-input-bg);
+    cursor: pointer;
+  }
+
+  #CustomAppForm-intake .custom-app-form__check-option:hover {
+    border-color:
+      color-mix(in srgb, var(--caf-accent) 42%, var(--caf-border));
+  }
+
+  #CustomAppForm-intake .custom-app-form__check-option input {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+    margin: 1px 0 0;
+    accent-color: var(--caf-accent);
+  }
+
+  #CustomAppForm-intake .custom-app-form__check-option span {
+    color: color-mix(in srgb, var(--caf-text) 78%, var(--caf-muted));
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  #CustomAppForm-intake .custom-app-form__conditional {
+    display: none;
+  }
+
+  #CustomAppForm-intake .custom-app-form__conditional.is-visible {
+    display: grid;
+  }
+
+  #CustomAppForm-intake .custom-app-form__submit {
+    width: 100%;
+    min-height: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 14px 22px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--caf-button-bg);
+    color: var(--caf-button-text);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition:
+      transform 0.2s ease,
+      background-color 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  #CustomAppForm-intake .custom-app-form__submit:hover {
+    background: var(--caf-button-hover);
+    transform: translateY(-2px);
+    box-shadow:
+      0 12px 30px
+      color-mix(in srgb, var(--caf-accent) 18%, transparent);
+  }
+
+  #CustomAppForm-intake .custom-app-form__submit svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  #CustomAppForm-intake .custom-app-form__note {
+    color: var(--caf-muted-2);
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  #CustomAppForm-intake .custom-app-form__status {
+    padding: 13px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  #CustomAppForm-intake .custom-app-form__status--success {
+    border: 1px solid
+      color-mix(in srgb, var(--caf-accent) 34%, transparent);
+    background:
+      color-mix(in srgb, var(--caf-accent) 7%, transparent);
+  }
+
+  #CustomAppForm-intake .custom-app-form__status--error {
+    border: 1px solid rgba(239, 100, 100, 0.35);
+    background: rgba(239, 100, 100, 0.07);
+    color: #f5c6c6;
+  }
+
+  #CustomAppForm-intake .custom-app-form__status--error ul {
+    margin: 6px 0 0 18px;
+  }
+
+  @media screen and (max-width: 989px) {
+    #CustomAppForm-intake .custom-app-form-section__container {
+      width: calc(100% - 36px);
+    }
+
+    #CustomAppForm-intake .custom-app-form-section__panel {
+      padding: min(var(--caf-panel-padding), 42px);
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    #CustomAppForm-intake {
+      padding-top: var(--caf-padding-top-mobile);
+      padding-bottom: var(--caf-padding-bottom-mobile);
+    }
+
+    #CustomAppForm-intake .custom-app-form-section__container {
+      width: calc(100% - 28px);
+    }
+
+    #CustomAppForm-intake .custom-app-form-section__panel {
+      padding: 28px 20px;
+      border-radius: min(var(--caf-radius), 16px);
+    }
+
+    #CustomAppForm-intake .custom-app-form-section__top-header {
+      width: 100%;
+      margin-bottom: 32px;
+      padding-bottom: 22px;
+    }
+
+    #CustomAppForm-intake .custom-app-form-section__top-eyebrow {
+      margin-bottom: 11px;
+      font-size: 10px;
+      letter-spacing: 0.13em;
+    }
+
+    #CustomAppForm-intake .custom-app-form-section__top-title {
+      font-size: clamp(22px, 7vw, 28px);
+      line-height: 1.15;
+    }
+
+    #CustomAppForm-intake .custom-app-form-section__top-text {
+      margin-top: 10px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    #CustomAppForm-intake .custom-app-form__grid,
+    #CustomAppForm-intake .custom-app-form__checkbox-grid {
+      grid-template-columns: 1fr;
+    }
+
+    #CustomAppForm-intake .custom-app-form__field--full {
+      grid-column: auto;
+    }
+
+    #CustomAppForm-intake input:not([type="checkbox"]),
+    #CustomAppForm-intake select,
+    #CustomAppForm-intake textarea {
+      font-size: 17px;
+    }
+
+    #CustomAppForm-intake input:not([type="checkbox"]),
+    #CustomAppForm-intake select {
+      min-height: 52px;
+    }
+
+    #CustomAppForm-intake textarea {
+      min-height: 120px;
+    }
+
+    #CustomAppForm-intake .custom-app-form__field label,
+    #CustomAppForm-intake .custom-app-form__field-label {
+      font-size: 13px;
+    }
+
+    #CustomAppForm-intake .custom-app-form__section-title {
+      font-size: 12px;
+    }
+
+    #CustomAppForm-intake .custom-app-form__check-option span {
+      font-size: 14px;
+    }
+
+    #CustomAppForm-intake .custom-app-form__note {
+      font-size: 11px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #CustomAppForm-intake *,
+    #CustomAppForm-intake *::before,
+    #CustomAppForm-intake *::after {
+      transition: none !important;
+      animation: none !important;
+    }
+  }

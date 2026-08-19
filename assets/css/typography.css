@@ -1,0 +1,40 @@
+/* Typography values carried from page.mockup-3.json and its rendered sections. */
+.launch48 .launch48__heading { font-size: clamp(44px, 4.2vw, 68px); line-height: .98; }
+#howitworksmockup3 .process-heading { font-size: 50px; line-height: .98; }
+#howitworksmockup3 .process-step-heading { font-size: 31px; }
+#howitworksmockup3 .process-step-text { font-size: 14px; }
+#whatsincludedmockup3 .included-features__title { font-size: clamp(36px, 3.7vw, 58px); line-height: .98; }
+#whatsincludedmockup3 .included-features__highlight { font-size: clamp(58px, 4.8vw, 84px); }
+#WhyGoCustom-template--21371726692430__why_go_custom_Q4YEcq .included-features__title-main { font-size: clamp(39px, 4.3vw, 58px); }
+#client-feedback-template--21371726692430__client_feedback_4VzBCG .client-feedback__heading { font-size: clamp(36px, 3.7vw, 58px); line-height: .98; }
+#client-feedback-template--21371726692430__client_feedback_4VzBCG .client-feedback__quote { font-size: 17px; }
+#client-feedback-template--21371726692430__client_feedback_4VzBCG .client-feedback__name { font-size: 11px; }
+#client-feedback-template--21371726692430__client_feedback_4VzBCG .client-feedback__role { font-size: 9px; }
+#faqmockup3 .launch-faq__heading { font-size: clamp(36px, 3.7vw, 50px); line-height: .98; }
+#faqmockup3 .launch-faq__lead { font-size: 17px; }
+#faqmockup3 .launch-faq__question { font-size: 17px; }
+#faqmockup3 .launch-faq__answer-inner { font-size: 16px; }
+#contactmockup3 .launch-contact__heading-main { font-size: clamp(36px, 3.5vw, 58px); line-height: .98; }
+#contactmockup3 .launch-contact__subheading { font-size: 14px; }
+#contactmockup3 .launch-contact__field { font-size: 14px; }
+#contactmockup3 .launch-contact__button { font-size: 12px; }
+.custom-footer-menus .custom-footer-menus__description { font-size: 15px; }
+.custom-footer-menus .custom-footer-menus__heading { font-size: 14px; }
+.custom-footer-menus .custom-footer-menus__link { font-size: 16px; }
+
+@media (max-width: 749px) {
+  .launch48 .launch48__heading { font-size: clamp(35px, 10vw, 47px); }
+  #howitworksmockup3 .process-heading { font-size: 36px; }
+  #howitworksmockup3 .process-step-heading { font-size: 26px; }
+  #client-feedback-template--21371726692430__client_feedback_4VzBCG .client-feedback__heading { font-size: 32px; }
+  #client-feedback-template--21371726692430__client_feedback_4VzBCG .client-feedback__quote { font-size: 13px; }
+  #faqmockup3 .launch-faq__heading { font-size: 44px; }
+  #faqmockup3 .launch-faq__lead { font-size: 15px; }
+  #faqmockup3 .launch-faq__question { font-size: 14px; }
+  #faqmockup3 .launch-faq__answer-inner { font-size: 12px; }
+  #contactmockup3 .launch-contact__heading-main { font-size: clamp(34px, 10vw, 42px); }
+  #contactmockup3 .launch-contact__field { font-size: 14px; }
+  #contactmockup3 .launch-contact__button { font-size: 12px; }
+  .custom-footer-menus .custom-footer-menus__description { font-size: 15px; }
+  .custom-footer-menus .custom-footer-menus__link { font-size: 15px; }
+}
